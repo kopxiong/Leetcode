@@ -1,7 +1,7 @@
-class Solution:
+class Solution(object):
     def mySqrt(self, x):
         """
-        using binary search algorithm to calculate the square root of integer x
+        Using binary search algorithm to calculate the square root of integer x
         time complexity: O(log n)
         space complexity: O(1)
 
