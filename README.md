@@ -1,2 +1,2 @@
 # Leetcode
-Leetcode implementation
+Leetcode implementation in python3
