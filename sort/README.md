@@ -10,8 +10,7 @@ Stable algorithms:
 
 02. Insertion sort (插入排序): O(n^2)
 
-冒泡排序（bubble sort）— O(n2)
-插入排序（insertion sort）—O(n2)
+
 鸡尾酒排序（cocktail sort）—O(n2)
 桶排序（bucket sort）—O(n)；需要O(k)额外空间
 计数排序（counting sort）—O(n+k)；需要O(n+k)额外空间
@@ -28,8 +27,8 @@ Unstable algorithms:
 
 11. Selection sort (选择排序): O(n^2)
 
+12. Shell sort (希尔排序): O(n log n)
 
-选择排序（selection sort）—O(n2)
 希尔排序（shell sort）—O(n log2 n)如果使用最佳的现在版本
 Clover排序算法（Clover sort）—O(n)期望时间，O(n2)最坏情况
 梳排序— O(n log n)

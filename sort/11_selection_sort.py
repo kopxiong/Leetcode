@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
 # 选择排序 (Selection sort) 的工作原理大致是将后面的元素中最小的元素一个个取出然后按顺序放置。
+
+# Time complexity: O(n^2)
 
 class Solution(object):
     def selectionSort(self, arr):

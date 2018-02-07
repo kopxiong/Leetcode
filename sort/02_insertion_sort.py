@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
 # 插入排序 (Insertion Sort) 的工作原理是通过构建有序序列，对于未排序数据，
 # 在已排序序列中从后向前扫描，找到相应位置并插入。
+
+# Time complexity: O(n^2)
 
 class Solution(object):
     def insertionSort(self, arr):
