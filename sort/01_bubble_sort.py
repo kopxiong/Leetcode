@@ -3,12 +3,15 @@
 class Solution(object):
     def bubbleSort(self, arr):
         n = len(arr)
+
+        # after each iteration, the last element is the maximum
         for i in range(n-1):
             for j in range(n-1-i):
                 if arr[j] > arr[j+1]:
-                    temp     = arr[j]
-                    arr[j]   = arr[j+1]
-                    arr[j+1] = temp
+                    arr[j], arr[j+1] = arr[j+1], arr[j]     # swap
+                    #temp     = arr[j]
+                    #arr[j]   = arr[j+1]
+                    #arr[j+1] = temp
 
         return arr
 
