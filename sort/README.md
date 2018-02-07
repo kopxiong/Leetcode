@@ -1,7 +1,13 @@
-# Sorting algorithms: talking about the computational complexity and stability
+# Sorting algorithms:
+
+# Implementation of all kinds of sorting algorithms using Python3
+
+# Talking about the computational complexity and stability
 
 Stable algorithms:
+
 1. Bubble sort (冒泡排序)： O(n^2)
+
 冒泡排序（bubble sort）— O(n2)
 插入排序（insertion sort）—O(n2)
 鸡尾酒排序（cocktail sort）—O(n2)
