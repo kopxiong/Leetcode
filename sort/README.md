@@ -27,9 +27,8 @@ Unstable algorithms:
 
 11. Selection sort (选择排序): O(n^2)
 
-12. Shell sort (希尔排序): O(n log n)
+12. Shell sort (希尔排序): O(n log^2 n)
 
-希尔排序（shell sort）—O(n log2 n)如果使用最佳的现在版本
 Clover排序算法（Clover sort）—O(n)期望时间，O(n2)最坏情况
 梳排序— O(n log n)
 堆排序（heap sort）—O(n log n)
