@@ -1,8 +1,9 @@
 # Sorting algorithms:
 
-# Implementation of all kinds of sorting algorithms using Python3
+Implementation of all kinds of sorting algorithms using Python3
 
-# Talking about the computational complexity and stability
+Talking about the computational complexity and stability
+
 
 Stable algorithms:
 
@@ -23,16 +24,18 @@ Stable algorithms:
 图书馆排序（library sort）— O(n log n)期望时间；O(n2)最坏时间；需要(1+ε)n额外空间
 块排序（block sort）— O(n log n)
 
+
 Unstable algorithms:
 
 11. Selection sort (选择排序): O(n^2)
 
 12. Shell sort (希尔排序): O(n log^2 n)
 
+13. Quick sort (快速排序): partition-exchange sort (划分交换排序); 最优: O(n log n); 最坏: O(n^2)
+
 Clover排序算法（Clover sort）—O(n)期望时间，O(n2)最坏情况
 梳排序— O(n log n)
 堆排序（heap sort）—O(n log n)
 平滑排序（smooth sort）— O(n log n)
-快速排序（quick sort）—O(n log n)期望时间，O(n2)最坏情况；对于大的、随机数列表一般相信是最快的已知排序
 内省排序（introsort）—O(n log n)
 耐心排序（patience sort）—O(n log n + k)最坏情况时间，需要额外的O(n + k)空间，也需要找到最长的递增子序列（longest increasing subsequence）
