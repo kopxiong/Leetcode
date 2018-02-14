@@ -10,7 +10,7 @@
 
 # heap is stored in array or list
 class Solution:
-    def heap_sort(self, lists):
+    def heapSort(self, lists):
         # 创建最大堆 (O(n))
         for start in range((len(lists) - 2) // 2, -1, -1): # start from the last non-child node
             self.sift_down(lists, start, len(lists) - 1)
@@ -41,4 +41,4 @@ class Solution:
 if __name__ == "__main__":
     lists = [9, 2, 1, 7, 6, 8, 5, 3, 4, 10]
 
-    print(Solution().heap_sort(lists))
+    print(Solution().heapSort(lists))

@@ -15,10 +15,11 @@ Stable algorithms:
 
 03. Merge sort (归并排序): O(n log n), 需要 O(n) 额外空间
 
+04. Counting sort (计数排序): O(n+k), 需要O(n+k)额外空间
+
 
 鸡尾酒排序（cocktail sort）—O(n2)
 桶排序（bucket sort）—O(n)；需要O(k)额外空间
-计数排序（counting sort）—O(n+k)；需要O(n+k)额外空间
 原地归并排序— O(n log2 n)如果使用最佳的现在版本
 二叉排序树排序（binary tree sort）— O(n log n)期望时间；O(n2)最坏时间；需要O(n)额外空间
 鸽巢排序（pigeonhole sort）—O(n+k)；需要O(k)额外空间
