@@ -36,9 +36,10 @@ Unstable algorithms:
 
 13. Quick sort (快速排序): partition-exchange sort (划分交换排序); 最优: O(n log n); 最坏: O(n^2)
 
+14. Heap sort (堆排序): O(n log n)
+
 Clover排序算法（Clover sort）—O(n)期望时间，O(n2)最坏情况
 梳排序— O(n log n)
-堆排序（heap sort）—O(n log n)
 平滑排序（smooth sort）— O(n log n)
 内省排序（introsort）—O(n log n)
 耐心排序（patience sort）—O(n log n + k)最坏情况时间，需要额外的O(n + k)空间，也需要找到最长的递增子序列
