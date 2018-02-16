@@ -11,7 +11,7 @@
 # 4. 反向填充目标数组: 将每个元素i放在新数组的第C(i)项，每放一个元素就将C(i)减去1
 
 # Stable
-# Time: O(n + k), k is the range of numbers
+# Time: O(n + k), k is the range of numbers, linear complexity !!!!!!
 # Auxiliary Space: O(n + k)
 
 import random

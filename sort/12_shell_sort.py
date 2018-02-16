@@ -5,26 +5,26 @@
 # 1. 插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率
 # 2. 但插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位。
 
-# Time complexity: O(n log n)
+# Time complexity: O(n log n)? O(n^1.3)
 
 class Solution(object):
-    def shellSort(self, arr):
-        n = len(arr)
+    def shellSort(self, lists):
+        n = len(lists)
         gap = n // 2
 
         while gap > 0:
             for i in range(gap, n):
-                key = arr[i]
+                key = lists[i]
                 j = i
 
                 # the same with insertion sort method
-                while j >= gap and arr[j - gap] > key:
-                    arr[j] = arr[j - gap]
+                while j >= gap and lists[j - gap] > key:
+                    lists[j] = lists[j - gap]
                     j = j - gap
-                arr[j] = key
+                lists[j] = key
             gap = gap // 2
 
-        return arr
+        return lists
 
 if __name__ == '__main__':
     lists = [32, 64, 1, 4, 98, 23, 8, 46, 10, 90]

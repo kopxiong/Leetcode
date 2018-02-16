@@ -14,7 +14,7 @@
 # 2. 若此时序列数不是1个则将上述序列再次归并，形成ceil(n/4)个序列，每个序列包含四/三个元素
 # 3. 重复步骤2，直到所有元素排序完毕，即序列数为1
 
-# Time complexity: O(n log n), 需要 O(n) 额外空间
+# Time complexity: O(n log n), Space complexity: O(n) 
 
 
 import random

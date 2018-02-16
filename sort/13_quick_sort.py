@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # 快速排序 (Quick sort)，又称划分交换排序（partition-exchange sort），快速排序使用分治法（Divide and conquer）策略把一个序列（list）分为两个子序列（sub-lists）。
+# 基本思想： 冒泡 + 二分 + 递归分治
 
 # 1. 从数列中挑出一个元素，称为"基准"（pivot）
 # 2. 重新排序数列，所有比基准值小的元素摆放在基准前面，所有比基准值大的元素摆在基准后面（相同的数可以到任何一边）。在这个分区结束之后，该基准就处于数列的中间位置。这个称为分区（partition）操作。
@@ -9,25 +10,25 @@
 
 """
 class Solution:
-    def quickSort(self, lst, low, high):
+    def quickSort(self, lists, low, high):
         if low < high:
-            p = self.partition(lst, low, high)      # find the pivot
-            self.quickSort(lst, low, p)
-            self.quickSort(lst, p+1, high)
+            p = self.partition(lists, low, high)      # find the pivot
+            self.quickSort(lists, low, p)
+            self.quickSort(lists, p+1, high)
 
         return
 
-    def partition(self, lst, low, high):
-        pivot = lst[high-1]     # take the last elment as pivot
+    def partition(self, lists, low, high):
+        pivot = lists[high-1]     # take the last elment as pivot
         i = low - 1
         for j in range(low, high):
-            if lst[j] < pivot:
+            if lists[j] < pivot:
                 i += 1
-                lst[i], lst[j] = lst[j], lst[i]
+                lists[i], lists[j] = lists[j], lists[i]
 
         # exchange the higher part to the end
-        if lst[high-1] < lst[i+1]:
-            lst[i+1], lst[high-1] = lst[high-1], lst[i+1]
+        if lists[high-1] < lists[i+1]:
+            lists[i+1], lists[high-1] = lists[high-1], lists[i+1]
 
         return i+1
 """
