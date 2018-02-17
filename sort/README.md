@@ -13,17 +13,17 @@ Stable algorithms:
 
 02. Insertion sort (插入排序): O(n^2)
 
-03. Merge sort (归并排序): O(n log n), 需要 O(n) 额外空间
+03. Merge sort (归并排序): O(n log n), 需要O(n)额外空间
 
 04. Counting sort (计数排序): O(n+k), 需要O(n+k)额外空间
 
-05. 桶排序(bucket sort): O(n); 需要O(k)额外空间
+05. Bucket sort (桶排序): O(n); 需要O(k)额外空间
 
-06. 基数排序(radix sort): O(n·k); 需要O(n)额外空间
+06. Radix sort (基数排序): O(n·k); 需要O(n)额外空间
 
 07. Binary tree sort (二叉树排序): O(n log n), worst case: O(n^2); 需要O(n)额外空间
 
-08. 块排序(block sort): O(n log n)
+08. Block sort (块排序): O(n log n)
 
 
 Unstable algorithms:
