@@ -11,14 +11,14 @@ class Solution(object):
 
         # after each iteration, the last element is the maximum
         for i in range(0, n-1, 1):
-            flat = True
+            flag = True
             for j in range(0, n-1-i, 1):
                 if lists[j] > lists[j+1]:
                     # swap, doesn't use temp because Python passes by reference (pointer in C++)
                     # shallow copy vs copy.deepcopy in Python
                     lists[j], lists[j+1] = lists[j+1], lists[j]
                     flag = False
-            print("current lists: ", lists)
+            #print("current lists: ", lists)
 
             # if no exchange, return arr or lists
             if flag:
