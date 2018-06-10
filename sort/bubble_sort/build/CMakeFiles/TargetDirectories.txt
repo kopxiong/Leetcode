@@ -1,0 +1,3 @@
+/home/xiongy/Leetcode/sort/bubble_sort/build/CMakeFiles/edit_cache.dir
+/home/xiongy/Leetcode/sort/bubble_sort/build/CMakeFiles/rebuild_cache.dir
+/home/xiongy/Leetcode/sort/bubble_sort/build/CMakeFiles/output.dir

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/bubbleSort.h
+iostream
+-
+
+/home/xiongy/Leetcode/sort/bubble_sort/src/bubbleSort.cpp
+iostream
+-
+new
+-
+bubbleSort.h
+/home/xiongy/Leetcode/sort/bubble_sort/src/bubbleSort.h
+
+/home/xiongy/Leetcode/sort/bubble_sort/src/main.cpp
+iostream
+-
+typeinfo
+-
+bubbleSort.h
+/home/xiongy/Leetcode/sort/bubble_sort/src/bubbleSort.h
+

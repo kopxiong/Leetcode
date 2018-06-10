@@ -10,15 +10,15 @@ class Solution(object):
         n = len(lists)
 
         # after each iteration, the last element is the maximum
-        for i in range(0, n-1, 1):
+        for i in range(n-1):
             flag = True
-            for j in range(0, n-1-i, 1):
+            for j in range(n-1-i):
                 if lists[j] > lists[j+1]:
                     # swap, doesn't use temp because Python passes by reference (pointer in C++)
                     # shallow copy vs copy.deepcopy in Python
                     lists[j], lists[j+1] = lists[j+1], lists[j]
                     flag = False
-            #print("current lists: ", lists)
+            print("current lists: ", lists)
 
             # if no exchange, return arr or lists
             if flag:
@@ -27,7 +27,7 @@ class Solution(object):
         return lists
 
 if __name__ == '__main__':
-    #lists = [32, 64, 1, 4, 98, 23, 8, 46, 10, 90]
-    lists = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+    lists = [32, 64, 1, 4, 98, 23, 8, 46, 10, 90]
+    #lists = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 
     print(Solution().bubbleSort(lists))
