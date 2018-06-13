@@ -50,7 +50,7 @@ def treeNodeToString(root):
     return "[" + output[:-2] + "]"
 
 def main():
-    nums = [-10, -3, 0, 5, 7, 9]
+    nums = [-10, -3, 0, 5, 9]
     ret = Solution().sortedArrayToBST(nums)
     out = treeNodeToString(ret)
     print("out: ", out)
