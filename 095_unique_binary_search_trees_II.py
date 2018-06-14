@@ -10,6 +10,10 @@ class TreeNode:
         self.left = None
         self.right = None
 
+    def __repr__(self):
+        if self:
+            return "[{}, {}, {}]".format(self.val, repr(self.left), repr(self.right))
+
 # recursive solution
 class Solution:
     def _generateTrees(self, nums):
