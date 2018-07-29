@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 归并操作（merge），也叫归并算法，指的是将两个已经排序的序列合并成一个序列的操作。
+# 归并操作（merge），也叫归并算法，指的是将两个已经排序的序列合并成一个序列的操作。Divide and Conquer
 
 # 迭代法（Top-down）
 # 1. 申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列
@@ -14,7 +14,7 @@
 # 2. 若此时序列数不是1个则将上述序列再次归并，形成ceil(n/4)个序列，每个序列包含四/三个元素
 # 3. 重复步骤2，直到所有元素排序完毕，即序列数为1
 
-# Time complexity: O(n log n), Space complexity: O(n) 
+# Time complexity: O(n log n), Space complexity: O(n)
 
 
 import random
