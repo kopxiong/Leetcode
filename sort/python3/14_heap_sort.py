@@ -12,7 +12,7 @@
 # heap is stored in array or list
 class Solution:
     def heapSort(self, lists):
-        # 创建最大堆 (O(n)), start from the last non-child node
+        # 创建最大堆 (O(n)), start from the last non-leaf node
         for start in range((len(lists) - 2) // 2, -1, -1):
             self.sift_down(lists, start, len(lists) - 1)
 
@@ -23,7 +23,7 @@ class Solution:
 
         return lists
 
-    # 最大堆调整 (O(log n)) Heapify
+    # 最大堆调整 (O(log n)) (Heapify)
     def sift_down(self, lists, start, end):
         root = start
         while True:
