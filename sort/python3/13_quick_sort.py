@@ -21,7 +21,7 @@ class Solution:
         return
 
     def partition(self, lists, low, high):
-        pivot = lists[high-1]     # take the last elment as pivot
+        pivot = lists[high-1]     # take the last element as pivot
         i = low - 1
         for j in range(low, high):
             if lists[j] < pivot:
