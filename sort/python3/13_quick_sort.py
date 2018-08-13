@@ -8,7 +8,9 @@
 
 # Optimal time complexity: O(n log n), worst case: O(n^2)
 
+
 """
+# in-place sorting
 class Solution:
     def quickSort(self, lists, low, high):
         if low < high:
@@ -33,6 +35,7 @@ class Solution:
         return i+1
 """
 
+# this solution needs more extra space
 class Solution1:
     def quickSort(self, lists):
         low = []
