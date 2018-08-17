@@ -9,30 +9,31 @@
 # Optimal time complexity: O(n log n), worst case: O(n^2)
 
 
-"""
 # in-place sorting
 class Solution:
     def quickSort(self, lists, low, high):
         if low < high:
-            p = self.partition(lists, low, high)      # find the pivot
-            self.quickSort(lists, low, p)
-            self.quickSort(lists, p+1, high)
+            pIndex = self.partition(lists, low, high)      # find the pivot
+            self.quickSort(lists, low, pIndex)
+            self.quickSort(lists, pIndex+1, high)
 
-        return
+        return lists
 
     def partition(self, lists, low, high):
         pivot = lists[high-1]     # take the last element as pivot
-        i = low - 1
+        pIndex = low
         for j in range(low, high):
             if lists[j] < pivot:
-                i += 1
-                lists[i], lists[j] = lists[j], lists[i]
+                lists[pIndex], lists[j] = lists[j], lists[pIndex]
+                pIndex += 1
 
         # exchange the higher part to the end
-        if lists[high-1] < lists[i+1]:
-            lists[i+1], lists[high-1] = lists[high-1], lists[i+1]
+        if lists[high-1] < lists[pIndex]:
+            lists[pIndex], lists[high-1] = lists[high-1], lists[pIndex]
 
-        return i+1
+        print("pIndex: ", pIndex)
+
+        return pIndex
 """
 
 # this solution needs more extra space
@@ -56,8 +57,12 @@ class Solution1:
             low = self.quickSort(low)
             high = self.quickSort(high)
             return low + pivotList + high
+"""
 
 if __name__ == '__main__':
-    lists = [32, 64, 1, 4, 98, 23, 8, 46, 10, 45]
+    lists = [32, 64, 1, 4, 28, 23, 8, 46, 10, 45]
+    low = 0
+    high = len(lists)
 
-    print(Solution1().quickSort(lists))
+    print(Solution().quickSort(lists, low, high))
+    # print(Solution1().quickSort(lists))
