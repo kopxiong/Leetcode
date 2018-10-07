@@ -32,6 +32,7 @@ class Solution:
             lists[pIndex], lists[high-1] = lists[high-1], lists[pIndex]
 
         print("pIndex: ", pIndex)
+        print("lists: ", lists)
 
         return pIndex
 """
